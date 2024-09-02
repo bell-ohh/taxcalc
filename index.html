@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Calc</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <div class="container-main">
+        <header>
+            <h1>Income Tax Calculator</h1>
+            <h2>Find out how much your salary is after tax</h2>
+        </header>
+
+        <form action="" class="calculator" method="push" id="form">
+            <div class="income-wrapper form-sections">
+                <label for="income" class="calc-input">Enter your gross income</label>
+                <div class="income-input-wrapper">
+                    <img src="/img/input__salary-icon (1).png" alt="dollar bill icon" class="income-icon">
+                    <input type="number" id="income" name="income" value="55000">
+                </div>
+            </div>
+            <div class="frequencywrap form-sect">
+                <label for="frequency" class="calc-input">Per</label>
+                <select id="frequency" name="frequency" value="frequency">
+                    <option calue="year" selected>Annual</option>
+                    <option value="monthly">Monthly</option>
+
+                </select>
+            </div>
+            <div class="state-wrapper form-sect">
+                <label for="state" class="calc-input">Where do you work?</label>
+                <select id="state" name="state" value="state">
+                    <option value="Ohio">Ohio</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Florida">Florida</option>
+
+                </select>
+            </div>
+            <div class="button-wrapp">
+                <input type="submit" value="calculate" id="submit">
+            </div>
+        </form>
+        <img class="logo" src="/img/icon__main-header.png"
+            atl="image of purple and orange shapes made into a business logo">
+    </div>
+    <div class="summ-contain">
+        <h3>Summary</h3>
+        <p> If you make <span id="salary">&nbsp</span> a year, living in the region of <span id="region">&nbsp</span>,
+            USA, you will be taxed <span id="taxamount">&nbsp</span>. That means that your net pay will be <span
+                id="netpayannually">&nbsp</span> per year, or, <span id="netpaymonthly">&nbsp</span> per monthly.
+    </div>
+    <script type="module" src="js/custom.js"></script>
+
+</body>
+
+</html>
